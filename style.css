@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font: 1em/1.2 "Times New Roman";
+    font-size: 27px;
+   }
+
+/* FEEDBACK */
+
+   .feedback {
+    border-radius: 0 10px 10px 0;
+    width: 300px;
+    background: #FFDEAD;
+    color: #000;
+    position: fixed; /* Фиксируем на одном месте  */
+    min-height: 100px;
+    top: 100px; left: -320px;
+    border-right: 28px solid #fc0; /* Оранжевая граница справа */
+    padding: 10px;
+    transition: left 1s; /* Анимация */
+   }
+
+   .feedback img {
+    float: left;
+    margin: 0 10px 0 0;
+   }
+
+   .feedback::after {
+    content: 'Contacts'; /* Выводим текст */
+    color: #000;
+    position: absolute; /* Абсолютное позиционирование */
+    right: -59px; bottom: 37%;
+    transform: rotate(-90deg); /* Поворачиваем текст */
+    -webkit-transform: rotate(-90deg);
+   }
+   .feedback:hover {
+    left: 0; /* При наведении сдвигаем вправо */
+   }
+
+   .txt{
+    position: absolute;
+    top: 100%;
+    left: 80%;
+    transform: translate(-10%, -40%);
+}
+
+/* BUTTON */
+
+button {
+    background: #9400D3;
+    color: #fff;
+    border: none;
+    padding: .7rem 2rem;
+    box-shadow: 5px 5px 0 #000;
+    position: relative; /* Относительное позиционирование */
+    left: 0;
+    top: 0;
+    transition: 1s;
+   }
+   button:hover {
+    left: 5px;
+    top: 5px;
+    box-shadow: 0 0 0 #000;
+   }
+
+#float-right-picture {
+    float: right;
+    background: navy;
+    padding: 3px;
+    margin: 10px;
+    height: 50px;
+    width: 50px;
+}
